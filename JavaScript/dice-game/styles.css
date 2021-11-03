@@ -11,21 +11,21 @@
 }
 
 body {
-  background-color: #393E46;
+  background-color: #0a192f;
 }
 
 h1 {
   margin: 30px;
-  font-family: 'Lobster', cursive;
-  text-shadow: 5px 0 #232931;
+  font-family: 'Amatic SC', cursive;
+  text-shadow: 5px 0 #182a46;
   font-size: 8rem;
-  color: #4ECCA3;
+  color: #64ffda;
 }
 
 p {
-  font-size: 2rem;
-  color: #4ECCA3;
-  font-family: 'Indie Flower', cursive;
+  font-size: 4rem;
+  color: #64ffda;
+  font-family: 'Amatic SC';
 }
 
 img {
@@ -36,6 +36,6 @@ footer {
   margin-top: 5%;
   color: #EEEEEE;
   text-align: center;
-  font-family: 'Indie Flower', cursive;
+  font-family: 'Amatic SC', cursive;
 
 }
