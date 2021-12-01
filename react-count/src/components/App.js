@@ -2,8 +2,6 @@ import React, {useState} from 'react';
 import Header from './Header.js';
 import Footer from './Footer.js';
 
-
-
 function App() {
   const [count, setCount] = useState(0);
 
@@ -12,6 +10,7 @@ function App() {
   }
 
   function decrease() {
+    
     setCount(count - 1);
   }
 
