@@ -19,7 +19,7 @@ function App() {
     <Header />
     <div className="container">
       <h1>{time}</h1>
-      <button onClick={updateTime}>Get Time</button>
+      <button className="divider" onClick={updateTime}>Get Time</button>
     </div>
     <Footer /> 
     </div>
