@@ -7,7 +7,6 @@ function App() {
   const [headingText, setHeading] = useState("");
 
   function handleChange(event) {
-    console.log(event.target.value);
     setName(event.target.value);
   }
 
@@ -21,7 +20,7 @@ function App() {
     <div>
     <Header />
     <div className="container">
-      <h1>Hello {headingText}</h1>
+      <h1>Hello {headingText + "!"}</h1>
       <form onSubmit={handleClick}>
         <input
           onChange={handleChange}
