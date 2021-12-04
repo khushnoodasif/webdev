@@ -3,53 +3,41 @@ import Header from './Header.js';
 import Footer from './Footer.js';
 
 function App() {
-  const [fullName, setFullName] = useState({
-    fName: "",
-    lName: ""
-  });
+  const [inputText, setInputText] = useState("");
+  const [items, setItems] = useState([]);
 
   function handleChange(event) {
-    const { value, name } = event.target;
+    const newValue = event.target.value;
+    setInputText(newValue);
+  }
 
-    setFullName(prevValue => {
-      if (name === "fName") {
-        return {
-          fName: value,
-          lName: prevValue.lName
-        };
-      } else if (name === "lName") {
-        return {
-          fName: prevValue.fName,
-          lname: value
-        };
-      }
+  function addItem() {
+    setItems(prevItems => {
+      return [...prevItems, inputText];
     });
+    setInputText("");
   }
 
   return (
     <div>
     <Header />
+    <h1 className="heading">To-Do List</h1>
     <div className="container">
-      <h1>
-        Hello {fullName.fName} {fullName.lName}
-      </h1>
-      <form>
-        <input
-          name="fName"
-          onChange={handleChange}
-          placeholder="First Name"
-          value={fullName.fName}
-        />
-        <input
-          name="lName"
-          onChange={handleChange}
-          placeholder="Last Name"
-          value={fullName.lName}
-        />
-        <button>Submit</button>
-      </form>
+      <div className="form">
+        <input onChange={handleChange} type="text" value={inputText} />
+        <button onClick={addItem}>
+          <span>Add</span>
+        </button>
+      </div>
+      <div>
+        <ul>
+          {items.map(todoItem => (
+            <li>{todoItem}</li>
+          ))}
+        </ul>
+      </div>
     </div>
-    <Footer /> 
+    <Footer />
     </div>
   );
 }
