@@ -8,5 +8,6 @@ Installing and setting up the apps.
    ```
 2. Install NPM packages
    ```sh
+   cd webdev
    npm install
    ```
