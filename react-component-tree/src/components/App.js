@@ -31,7 +31,7 @@ function App() {
     <div>
     <Header />
     <div className="container">
-    <div className="heading">
+      <div className="heading">
         <h1>To-Do List</h1>
       </div>
       <div className="form">
