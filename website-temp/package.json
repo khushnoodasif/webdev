@@ -1,6 +1,6 @@
 {
   "name": "tasker",
-  "homepage" : "http://www.khushnoodasif.com/tasker",
+  "homepage": "http://www.khushnoodasif.com/tasker",
   "version": "1.0.0",
   "private": true,
   "dependencies": {
