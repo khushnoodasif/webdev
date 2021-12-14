@@ -19,7 +19,7 @@ function App() {
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo"/>
-        <h1 className="App-header">Tasker</h1>
+        <h1 className="App-header">React Contacts</h1>
       </header>
 <div>
   <h1 className="heading">Contacts</h1>

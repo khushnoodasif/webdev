@@ -1,6 +1,5 @@
 {
-  "name": "tasker",
-  "homepage" : "http://www.khushnoodasif.com/tasker",
+  "name": "react-contacts",
   "version": "1.0.0",
   "private": true,
   "dependencies": {
