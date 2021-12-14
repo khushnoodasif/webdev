@@ -1,4 +1,4 @@
-import react from 'react';
+import React from 'react';
 import Avatar from './Avatar.js';
 import Detail from './Detail.js';
 

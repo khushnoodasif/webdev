@@ -1,4 +1,4 @@
-import react from 'react';
+import React from 'react';
 
 function Detail(props) {
    return (<p className="info">{props.detailinfo}</p>
